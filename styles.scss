@@ -1,0 +1,144 @@
+// Reset code
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+// GLOBAL STANDARDS
+
+// Colours
+$navcolour: #9b1a1a;
+$backgroundcolour: #2b2828;
+$textcolour: #e3e3e3;
+$textbox: #383333;
+
+// Fonts
+@font-face {
+    font-family: "galbasic";
+    src: url('fonts/galbasic.ttf');
+}
+@font-face {
+    font-family: "Starjedi";
+    src: url('fonts/Starjedi.ttf');
+}
+@font-face {    
+    font-family: "Starhol";
+    src: url('fonts/Starjhol.ttf');
+}
+
+// Background
+body {
+    background-color: $backgroundcolour;
+}
+
+//Navigation
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: $navcolour;
+    justify-items: center;
+    margin: auto;
+    div {
+        /* padding-left: 1rem; */
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+            font-family: Starhol;
+            color: $textcolour;
+        }
+        h3 {
+            font-family: galbasic;
+            color: $textcolour;
+        }
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        a {
+            margin-top: auto;
+            margin-bottom: auto;
+            color: $textcolour;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+            text-align: center;
+            font-family: Arial;
+        }
+    }
+    /* justify-content: space-evenly;
+    font-family: Verdana;
+    font-weight: bold; */
+}
+
+
+
+//Main Content
+
+.main-content {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    header{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        h1 {
+            font-family: Starjedi;
+            color: $textcolour;
+            border-bottom: solid #e3e3e3;
+        }
+        h3 {
+            font-family: galbasic;
+            color: $textcolour;
+        }
+    }
+    article {
+        margin: 1rem;
+        p, li {
+            font-family: Arial;
+            color: $textcolour;
+            font-size: large;
+        }
+        li {
+            margin: 1rem;
+        }
+        h4, h3, h2, h1 {
+            font-family: Arial;
+            color: $textcolour;
+            font-size: larger;
+        }
+        .quote-text {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            justify-self: center;
+            font-style: italic;
+            text-align: center;
+            background-color: $textbox;
+        }
+        .italtext {
+            font-style: italic;
+            font-size: medium;
+        }
+        img {
+            display: flex;
+            justify-self: center;
+            margin: auto;
+        }
+    }
+    
+}
+
+/* body{
+} */
+
+@media (min-width: 1000px) {
+    .main-content {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+}

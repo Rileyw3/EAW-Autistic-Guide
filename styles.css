@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "galbasic";
+  src: url("fonts/galbasic.ttf");
+}
+@font-face {
+  font-family: "Starjedi";
+  src: url("fonts/Starjedi.ttf");
+}
+@font-face {
+  font-family: "Starhol";
+  src: url("fonts/Starjhol.ttf");
+}
+body {
+  background-color: #2b2828;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #9b1a1a;
+  justify-items: center;
+  margin: auto;
+  /* justify-content: space-evenly;
+  font-family: Verdana;
+  font-weight: bold; */
+}
+nav div {
+  /* padding-left: 1rem; */
+  margin-left: auto;
+  margin-right: auto;
+}
+nav div h2 {
+  font-family: Starhol;
+  color: #e3e3e3;
+}
+nav div h3 {
+  font-family: galbasic;
+  color: #e3e3e3;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+nav ul a {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #e3e3e3;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  text-align: center;
+  font-family: Arial;
+}
+
+.main-content {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.main-content header {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+}
+.main-content header h1 {
+  font-family: Starjedi;
+  color: #e3e3e3;
+  border-bottom: solid #e3e3e3;
+}
+.main-content header h3 {
+  font-family: galbasic;
+  color: #e3e3e3;
+}
+.main-content article {
+  margin: 1rem;
+}
+.main-content article p, .main-content article li {
+  font-family: Arial;
+  color: #e3e3e3;
+  font-size: large;
+}
+.main-content article li {
+  margin: 1rem;
+}
+.main-content article h4, .main-content article h3, .main-content article h2, .main-content article h1 {
+  font-family: Arial;
+  color: #e3e3e3;
+  font-size: larger;
+}
+.main-content article .quote-text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-self: center;
+  font-style: italic;
+  text-align: center;
+  background-color: #383333;
+}
+.main-content article .italtext {
+  font-style: italic;
+  font-size: medium;
+}
+.main-content article img {
+  display: flex;
+  justify-self: center;
+  margin: auto;
+}
+
+/* body{
+} */
+@media (min-width: 1000px) {
+  .main-content {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
